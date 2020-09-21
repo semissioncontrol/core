@@ -33,4 +33,4 @@ do
 	cd /semc/src
 	git clone https://github.com/semissioncontrol/$line
 
-done < "../../supported"
+done < "/semc/src/core/supported"
