@@ -24,10 +24,13 @@ git clone https://github.com/semissioncontrol/cli
 # Invoke cli installation script
 #bash /semc/src/core/start/cli
 
-# Now, install go through the installation file
-# Each module to be installed is seperated by a
+# Now, go through the installation file. Each
+# module to be installed is seperated by a
 # newline in semissioncontrol/core/supported
 while IFS= read -r line
 do
-	echo "$line"
-done < "/semc/src/core/supported"
+	echo "Installing semissioncontrol/$line"
+	cd /semc/src
+	git clone https://github.com/semissioncontrol/$line
+
+done < "../../supported"
