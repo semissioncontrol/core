@@ -1,0 +1,2 @@
+# core
+Core for SEMC
