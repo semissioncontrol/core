@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /semc/src/cli/
+sudo chmod +x ./configure
+sudo ./configure
+sudo make compile
+cp target/debug/semc /semc/bin
