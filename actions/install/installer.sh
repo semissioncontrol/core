@@ -22,7 +22,7 @@ cd /semc/src
 git clone https://github.com/semissioncontrol/cli
 
 # Invoke cli installation script
-#bash /semc/src/core/start/cli
+bash /semc/src/core/start/cli
 
 # Now, go through the installation file. Each
 # module to be installed is seperated by a
